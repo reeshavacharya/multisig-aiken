@@ -469,8 +469,7 @@ validator {
         RemoveSignatureOnChain -> error @"Function not implemented."
             // run_common_validation && validateRemoveSignatureOnChain(msd, single_script_input, single_script_output, ctx)
         ValidateActionOnChain -> enough_signatures_on_chain && validateActionOnChain(msc, msd, ctx, all_script_inputs, all_script_outptus)
-        ValidateGood morning everyone, I'm in college just about to leave. I might not make it in the scrum.
-        ActionOffChain (msg, sigs) -> validateActionOffChain(msg, sigs, msc, msd, ctx, all_script_inputs, all_script_outptus)
+        ValidateActionOffChain (msg, sigs) -> validateActionOffChain(msg, sigs, msc, msd, ctx, all_script_inputs, all_script_outptus)
     }
   }
 }
