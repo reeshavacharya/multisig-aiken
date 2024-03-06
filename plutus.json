@@ -1,0 +1,410 @@
+{
+  "preamble": {
+    "title": "cardano/multisig",
+    "description": "Aiken contracts for project 'cardano/multisig'",
+    "version": "0.0.0",
+    "plutusVersion": "v2",
+    "compiler": {
+      "name": "Aiken",
+      "version": "v1.0.24-alpha+982eff4"
+    },
+    "license": "Apache-2.0"
+  },
+  "validators": [
+    {
+      "title": "proposal.spend",
+      "datum": {
+        "title": "msd",
+        "schema": {
+          "$ref": "#/definitions/proposal~1MultiSigData"
+        }
+      },
+      "redeemer": {
+        "title": "redeemer",
+        "schema": {
+          "$ref": "#/definitions/proposal~1MultiSigRedeemer"
+        }
+      },
+      "compiledCode": "591aae01000032323232323232323222232323232323232533300d32323232323232323232323232323232323232323232323232323232323232533302c3370e90000028a999816003099191919191919299981999b874800000454ccc0cccc02801c0184ccc020c098c0c530158d8799fd8799f581cf4c9f9c4252d86702c2f4c2e49e6648c7cffe3c8f2b6b7d779788f504671756f72756dffd8799f581cf4c9f9c4252d86702c2f4c2e49e6648c7cffe3c8f2b6b7d779788f504870726f706f73616cffff0033021491054d534532320000202e14a02c606205e64a66606466e1d200200113232375860726074004607000260600062c6060004604c002600e002603460580306040605602e603e60546038605403229404c8c94ccc0b8cdc3a400400e2a66605c0102646464646464646464646464a666074a666074a6660746602201201426464a66607866ebc0080045288b19299981e19b87480080044c8c8c8c800cdd6182200098220011821000981d0040b181d00399299981d99b87480080044c8c8c8c800cdd6182180098218011820800981c81c0b181c81b8a501533303a3375e6e9c01cdd38008a511614a0266601e605a607098158d8799fd8799f581cf4c9f9c4252d86702c2f4c2e49e6648c7cffe3c8f2b6b7d779788f504671756f72756dffd8799f581cf4c9f9c4252d86702c2f4c2e49e6648c7cffe3c8f2b6b7d779788f504870726f706f73616cffff0000203514a06eb0c0ec008c0e4004c8c94ccc0e4cdc3a40040022c2646466ec0c100004c100c104004dd6181f800981b801181b8009804000980499299981b99b87480080044c8c8dd6181f181f801181e800981a8018b181a8011815800980600119299981a19b87480080044c8c8dd6181d981e001181d00098190188b1819018180f181800e1812181780d981198171810181700e98008009129998198008a6103d87a800013253330340011323374a90001981b191ba73303730340013303730350014bd7019bb00014c10180004bd70181b001099191919299981a99b87480000044c8c8c8c8cdd2a40006607a646e9ccc0f8c0ec004cc0f8c0f00052f5c066ec0004dd39981e80400125eb80c0e4008dd6181c8009919bb0303c001303c303d0013758607600260660042980103d87a800030330013300500500130380033036002303600114a02a66605c66e1d200400716132323232323232323232323232323232323253330403370e900300c8a99982000f0991919191919191919191919191919299982799b87480000044c8c8c8c94ccc14d4ccc14ccc064c08ccc08802c01d2401054d534532370013302000f00d14a026666666602e980158d8799fd8799f581cf4c9f9c4252d86702c2f4c2e49e6648c7cffe3c8f2b6b7d779788f504671756f72756dffd8799f581cf4c9f9c4252d86702c2f4c2e49e6648c7cffe3c8f2b6b7d779788f504870726f706f73616cffff0004e04203e00c00f00100314a06eacc15c004c15c008c154004c1340084c8c94ccc1454ccc144cc05cc084cc04c0f00192401054d53453238001330173370e606208090022481054d534531370014a02666666024980158d8799fd8799f581cf4c9f9c4252d86702c2f4c2e49e6648c7cffe3c8f2b6b7d779788f504671756f72756dffd8799f581cf4c9f9c4252d86702c2f4c2e49e6648c7cffe3c8f2b6b7d779788f504870726f706f73616cffff0000100a00704003c14a060aa002609a004609a00264a66609c66e1d2002001132323232003375860ac00260ac00460a800260980962c60980946602c01006e6602a0026eb0c0dcc124c0f8c124118c0f4c120c0e8c120004cc0dd2401054d53453330003303a03823302e303d30484c0158d8799fd8799f581cf4c9f9c4252d86702c2f4c2e49e6648c7cffe3c8f2b6b7d779788f504671756f72756dffd8799f581cf4c9f9c4252d86702c2f4c2e49e6648c7cffe3c8f2b6b7d779788f504870726f706f73616cffff0000133012001033303a30453037304533035491054d5345333100005375860960026096004609200260920046eb0c11c004c11c004cc048c0c0c0f9300158d8799fd8799f581cf4c9f9c4252d86702c2f4c2e49e6648c7cffe3c8f2b6b7d779788f504671756f72756dffd8799f581cf4c9f9c4252d86702c2f4c2e49e6648c7cffe3c8f2b6b7d779788f504870726f706f73616cffff0002f14a0264646464646464646464646464646464646464646464a6660ac66e1d20000011323253330583370e9000000899191919299982e299982e299982e299982e198111816198158048042481054d534532370013301600a304c305a01b14a02a02e29404cc0a404403c528099999999810260158d8799fd8799f581cf4c9f9c4252d86702c2f4c2e49e6648c7cffe3c8f2b6b7d779788f504671756f72756dffd8799f581cf4c9f9c4252d86702c2f4c2e49e6648c7cffe3c8f2b6b7d779788f504870726f706f73616cffff0005704b04700b01100100314a06eacc180004c180008c178004c1580084c8c94ccc1694ccc1694ccc1694ccc168cc080c0a8cc0701140292401054d53453238001330203370e607409290022481054d534531370014a0266028010609460b0032294054054528099999980da60158d8799fd8799f581cf4c9f9c4252d86702c2f4c2e49e6648c7cffe3c8f2b6b7d779788f504671756f72756dffd8799f581cf4c9f9c4252d86702c2f4c2e49e6648c7cffe3c8f2b6b7d779788f504870726f706f73616cffff0000100900b04904514a060bc00260ac00460ac002609260a802a2c60a80a46603c01207e6603a00407c608a60a066080921054d53453333000093044304f3041304f3303f4901054d53453333000083301a00137586078609c6086609c0966084609a607e609a002660789201054d53453330003303f03d2330333042304d4c0158d8799fd8799f581cf4c9f9c4252d86702c2f4c2e49e6648c7cffe3c8f2b6b7d779788f504671756f72756dffd8799f581cf4c9f9c4252d86702c2f4c2e49e6648c7cffe3c8f2b6b7d779788f504870726f706f73616cffff00001375860a400260a400460a000260a00046eb0c138004c138004cc064c0dcc115300158d8799fd8799f581cf4c9f9c4252d86702c2f4c2e49e6648c7cffe3c8f2b6b7d779788f504671756f72756dffd8799f581cf4c9f9c4252d86702c2f4c2e49e6648c7cffe3c8f2b6b7d779788f504870726f706f73616cffff00036223300e3375e004002921054d53453334001323300c337126eb4c0c8c110004c098c064cc0dc00c94ccc11d4ccc11d4ccc11ccc074dd6181d18228011bae303a3045001133372a6eb8c0e8c114004dd7181b98228009bae3033304500114a026466446466600200290002400044464646464a6660a266e21203e00614a22a6660a266e1c0100044ccc01c01ccdc00032400466e0001520041633700004002601666e38018cdc0001a400466e08c028cdc70028012404066e38014008dc99bb337520026464666e30004cdc019b810020014800800ccdc0800a4100026e34004dd7181b98228008a5013370e900118241baa3033304500614a0921054d534533350033028303830434c158d8799fd8799f581cf4c9f9c4252d86702c2f4c2e49e6648c7cffe3c8f2b6b7d779788f504671756f72756dffd8799f581cf4c9f9c4252d86702c2f4c2e49e6648c7cffe3c8f2b6b7d779788f504870726f706f73616cffff00040253330455333045337129030000899b89001481c8528099b810014818054ccc1154ccc114cdc4a418402002266e2400520cc0114a0266e00cdc0800a418402900a0b1bac304800130480023046001303e03c222222323232323232323232323253330505333050005100414a020022940cc054cdd7801007a49054d5345323000304600130253039304b00633012533304c33712602200c6022004266e1cccc0c8008dd7181f9825181e18250069bae303c304a303c304a00d48008528249054d534531350033011533304b33712602000c6020006266e1cccc0c400cdd7181f1824981f18248061bae303b3049303e304900c48008528249054d53453439003756607460900026606e9201054d53453131003301300800537566070608c0026606a921054d5345343400330110050033300e0050033300d00300230010012223232533304500114bd7009929998230008801099192999822998120018010999804004000801899824801199804004000801982500198240011bac30440023758608400266ec0dd38011ba7001222222223232323232323232323232533304f533304f533304f3301600b3301533712602801a602800a9201054d534531340013301533712a66609e0162602800426028002602800c9201054d534531320014a026602aa66609e66e24c05000cc0500104cdc399981a8021bae3042304d303f304d013375c607e609a607e609a02690010a504901054d534531350014a026602c66609e6082018941289980a9980e80411919299982919b87480000045280a99982919b87480080045288a513050001303c304e001491054d534531360014a066032002646600200201a44a6660a6002297adef6c60132323233057337606ea4004dd319191980080080111299982c8008a5eb7bdb1804c8cc16ccdd81ba9375c60b00026ea0cdc0a40006eb4c164004cc00c00cc174008c16c004dd5982a801998028028011bae3053002305700230550013301500c00f3301400c00e30143304f33039491054d53453131000034bd70180980198090019980900400499808802001198080028039bac30313043303830430083375e00200646660440029110048810022533303c00214a22c44a6660760042944400488c00ccc02ccc0ac0048cdd79817181c9815981c800801919ba548000cc0fcc0acc0e40052f5c0464646600200200444a66607c002297adef6c6013300637566080002660040046082002646600200200444a66607a002297ae0132323232533303e3370e90010008998030030018998211821981e00119803003001981e00099ba548000cc100c0b0c0e80092f5c06082004607e0024466052002466ebcc0b0c0dc00400c88c8ccc00400400c0088894ccc0f400840044c8ccc010010c10400ccc88c8cc004004014894ccc1080044cc10ccdd81ba9004374c00697adef6c6013232323253330433375e6601e010004980103d8798000133047337606ea4020dd30038028a99982199b8f0080021323253330453370e900000089982499bb037520146094608600400a200a608600264a666088a66608e00229445280a60103d87a800013374a9000198241ba60014bd70191998008008040011112999824801080089919980200218268019991191980080080291299982700089982799bb037520086ea000d2f5bded8c0264646464a66609e66ebccc06c020009300103d8798000133053337606ea4020dd40038028a99982799b8f0080021323253330513370e900000089982a99bb0375201460ac609e00400a200a609e00264a6660a066e1c005200014c103d87a800013374a90001982a1ba80014bd7019b80007001133053337606ea4008dd4000998030030019bad3050003375c609c00460a400460a00026eb8c120004dd69824800982580109982399bb037520046e98004cc01801800cdd598220019bae304200230460023044001375c60780026eacc0f4004c0fc008894ccc0d8cdc80010008a6103d8798000153330363371e0040022980103d87a800014c103d87b8000223300300123375e60526068604c606800200644646600200200644a66607200229444c8c94ccc0e0c0140084cc010010004528181e801181d80091191980080080191299981c000880189981c981d00099801001181d80091919b873012330230012323253330353370e90000008a5116303300230290013012002330020012323253330343370e90000008a60103d87a8000153330343370e90010008a6103d87a800013374a90001981c181c981900125eb80c0c8004c078c0c000488c8cc00400400c894ccc0d800452f5c0264646464a66606e66e1d200200113300600600313303b303c30350023300600600330350013005002303a0023038001223232323233038374e00a660706e9c00ccc0e0c0d4004cc0e0c0d80052f5c0a66606c0022c266ec0c098c0c4c08cc0c4c0e0004dd3981c8009bac303400237586064002646600200200444a66606a002297bdb1801018000010180001323232323253330373301b0090051337606e9ccc0ec014008dd3800899bb0374e0046e9ccc0ec014004dd6181c0011bac30360013300400400130390023037001300100122533303100114bd70099191981a0011980200219810800919981899baf0010034a0944c0d4008c0cc004888c8c8c8c8c94ccc0cc00c4004528198041bac3037303830383038303830383038303830383030302530300050013253330323370e900000089bae303730300061630300053300f0010043758603e605a0026602200600244646600200200644a66606200229404c8c94ccc0c0cdc78010028a511330040040013035002375c606600244a66605666ebc0080045288b119299981519b87480000045854ccc0a8cdc3a40040022c2605e60500046050002604c046a66604ca66604c00620042940400452819802191980b80891919299981499b87480080044cdc78021bae302e302700214a0604e0026034604a6034604a0026464a66604e66e1d2000001161375c6058604a004604a0026030604601a01e660126028604498158d8799fd8799f581cf4c9f9c4252d86702c2f4c2e49e6648c7cffe3c8f2b6b7d779788f504671756f72756dffd8799f581cf4c9f9c4252d86702c2f4c2e49e6648c7cffe3c8f2b6b7d779788f504870726f706f73616cffff0000b33008301330214c0158d8799fd8799f581cf4c9f9c4252d86702c2f4c2e49e6648c7cffe3c8f2b6b7d779788f504671756f72756dffd8799f581cf4c9f9c4252d86702c2f4c2e49e6648c7cffe3c8f2b6b7d779788f504870726f706f73616cffff0000c3253330233370e90000008b09919191919b89375a6026604a012600e6603000446600e0040026eb0c058c090020dd61815181580118148009810810181080f9119198008008019129998140008a501323253330273375e00400a29444cc010010004c0b0008c0a8004c004004894ccc090004520001337009001198010011813800998009808980e26158d8799fd8799f581cf4c9f9c4252d86702c2f4c2e49e6648c7cffe3c8f2b6b7d779788f504671756f72756dffd8799f581cf4c9f9c4252d86702c2f4c2e49e6648c7cffe3c8f2b6b7d779788f504870726f706f73616cffff000192232323232002301a0015333024001161325333025001132323253330253370e90000008b0a99981299b8748008004584c0a8c08c008c08c004c03cc084c04cc084004c09c00858c09c004cc0440048cc014010004dd61807980e9809180e80091198018011bab300e301c300e301c001223370e6660060026eb8c040c06c008dd71806980d80124004444646464a66604066e1d20020011480004dd69812980f001180f00099299980f99b8748008004530103d87a8000132323300100100222533302500114c103d87a800013232323253330263371e014004266e9520003302a375000297ae0133006006003375a604e0066eb8c094008c0a4008c09c004dd59812180e801180e80099198008008021129998110008a6103d87a800013232323253330233371e010004266e95200033027374c00297ae0133006006003375660480066eb8c088008c098008c090004dd59804980b8019805980b0011bab300730153007301500433004491054d5345343300001323300700123009300a301500137586002602660106026020460346036603600266002921054d53453432000022253330170011613253330180011301a00216301a001323300300123005300630113003301100137586008601e6008601e0184602c602e00244646600200200644a66602c002297ae0132325333015300500213301900233004004001133004004001301a00230180012323253330113370e90010008a5114a0601e0026004601a0024602600229309b2b19299980699b874800000454ccc040c02c024526161533300d3370e90010008a99980818058048a4c2c2a66601a66e1d200400115333010300b00914985854ccc034cdc3a400c0022a66602060160122930b0a99980699b87480200044c8c8c8c94ccc050c05c0084c8c9263300b00223253330143370e90000008991919191919299980e98100010a4c2c6eb8c078004c078008dd7180e000980e0011bae301a00130120021630120013253330123370e90000008991919191919299980d980f0010991924c64a66603466e1d200000113232323253330213024002132498c94ccc07ccdc3a400000226464a666048604e0042930b1bae3025001301d00416301d00316375a604400260440046040002603000a2c6030008601e00a2c66e1d2002301837546038002603800460340026034004603000260200082c60200062c6eb0c054004c054008c04c004c02c02458c02c020c0040208c94ccc030cdc3a40000022a66601e60140042930b0a99980619b87480080044c8c8c8c94ccc04cc0580084c8c9263300a0022300c001300700316375860280026028004602400260140042c6014002464a66601666e1d20000011323232325333012301500213232498cc0240088c8c8cc0300048c8dd6980b8011bae3015001375660280046eb8c048004c94ccc040cdc3a4000002264646464a66602e6034004264649319299980b19b87480000044c8c94ccc06cc0780084c9263253330193370e900000089919299980f181080109924c602a0022c603e002602e0042a66603266e1d2002001132323232323253330223025002149858dd6981180098118011bad30210013021002375a603e002602e0042c602e0022c603800260280062a66602c66e1d200200115333019301400314985858c050008c03800c58c060004c060008c058004c03801058c03800c58dd598098009809801180880098048010a99980599b87480080044c8c94ccc040c04c0084c92630050011630110013009002163009001232533300a3370e900000089919191919192999809980b0010991924c66014008460180026601200a46eb800458dd6980a000980a0011bac301200130120023758602000260100042c601000244646600200200644a66601c00229309919801801980900118019808000919299980419b87480000044c8c94ccc034c04000852616375c601c002600c0042a66601066e1d200200113232533300d3010002149858dd7180700098030010b1803000918029baa001230033754002ae6955ceaab9e5573eae815d0aba21",
+      "hash": "27bcf503384129d4990a8d095b90a33bcbf27288eb385a7cd3aba98f"
+    }
+  ],
+  "definitions": {
+    "Bool": {
+      "title": "Bool",
+      "anyOf": [
+        {
+          "title": "False",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": []
+        },
+        {
+          "title": "True",
+          "dataType": "constructor",
+          "index": 1,
+          "fields": []
+        }
+      ]
+    },
+    "ByteArray": {
+      "dataType": "bytes"
+    },
+    "Int": {
+      "dataType": "integer"
+    },
+    "List$ByteArray": {
+      "dataType": "list",
+      "items": {
+        "$ref": "#/definitions/ByteArray"
+      }
+    },
+    "List$aiken/transaction/credential/Credential": {
+      "dataType": "list",
+      "items": {
+        "$ref": "#/definitions/aiken~1transaction~1credential~1Credential"
+      }
+    },
+    "List$proposal/Signature": {
+      "dataType": "list",
+      "items": {
+        "$ref": "#/definitions/proposal~1Signature"
+      }
+    },
+    "Option$aiken/transaction/credential/Referenced$aiken/transaction/credential/Credential": {
+      "title": "Optional",
+      "anyOf": [
+        {
+          "title": "Some",
+          "description": "An optional value.",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "$ref": "#/definitions/aiken~1transaction~1credential~1Referenced$aiken~1transaction~1credential~1Credential"
+            }
+          ]
+        },
+        {
+          "title": "None",
+          "description": "Nothing.",
+          "dataType": "constructor",
+          "index": 1,
+          "fields": []
+        }
+      ]
+    },
+    "aiken/dict/Dict$ByteArray_Int": {
+      "title": "Dict",
+      "description": "An opaque `Dict`. The type is opaque because the module maintains some\n invariant, namely: there's only one occurrence of a given key in the dictionary.\n\n Note that the `key` parameter is a phantom-type, and only present as a\n means of documentation. Keys can be any type, yet will need to comparable\n to use functions like `insert`.\n\n See for example:\n\n ```aiken\n pub type Value =\n   Dict<PolicyId, Dict<AssetName, Int>>\n ```",
+      "dataType": "map",
+      "keys": {
+        "$ref": "#/definitions/ByteArray"
+      },
+      "values": {
+        "$ref": "#/definitions/Int"
+      }
+    },
+    "aiken/transaction/OutputReference": {
+      "title": "OutputReference",
+      "description": "An `OutputReference` is a unique reference to an output on-chain. The `output_index`\n corresponds to the position in the output list of the transaction (identified by its id)\n that produced that output",
+      "anyOf": [
+        {
+          "title": "OutputReference",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "transaction_id",
+              "$ref": "#/definitions/aiken~1transaction~1TransactionId"
+            },
+            {
+              "title": "output_index",
+              "$ref": "#/definitions/Int"
+            }
+          ]
+        }
+      ]
+    },
+    "aiken/transaction/TransactionId": {
+      "title": "TransactionId",
+      "description": "A unique transaction identifier, as the hash of a transaction body. Note that the transaction id\n isn't a direct hash of the `Transaction` as visible on-chain. Rather, they correspond to hash\n digests of transaction body as they are serialized on the network.",
+      "anyOf": [
+        {
+          "title": "TransactionId",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "hash",
+              "$ref": "#/definitions/ByteArray"
+            }
+          ]
+        }
+      ]
+    },
+    "aiken/transaction/credential/Address": {
+      "title": "Address",
+      "description": "A Cardano `Address` typically holding one or two credential references.\n\n Note that legacy bootstrap addresses (a.k.a. 'Byron addresses') are\n completely excluded from Plutus contexts. Thus, from an on-chain\n perspective only exists addresses of type 00, 01, ..., 07 as detailed\n in [CIP-0019 :: Shelley Addresses](https://github.com/cardano-foundation/CIPs/tree/master/CIP-0019/#shelley-addresses).",
+      "anyOf": [
+        {
+          "title": "Address",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "payment_credential",
+              "$ref": "#/definitions/aiken~1transaction~1credential~1Credential"
+            },
+            {
+              "title": "stake_credential",
+              "$ref": "#/definitions/Option$aiken~1transaction~1credential~1Referenced$aiken~1transaction~1credential~1Credential"
+            }
+          ]
+        }
+      ]
+    },
+    "aiken/transaction/credential/Credential": {
+      "title": "Credential",
+      "description": "A general structure for representing an on-chain `Credential`.\n\n Credentials are always one of two kinds: a direct public/private key\n pair, or a script (native or Plutus).",
+      "anyOf": [
+        {
+          "title": "VerificationKeyCredential",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "$ref": "#/definitions/ByteArray"
+            }
+          ]
+        },
+        {
+          "title": "ScriptCredential",
+          "dataType": "constructor",
+          "index": 1,
+          "fields": [
+            {
+              "$ref": "#/definitions/ByteArray"
+            }
+          ]
+        }
+      ]
+    },
+    "aiken/transaction/credential/Referenced$aiken/transaction/credential/Credential": {
+      "title": "Referenced",
+      "description": "Represent a type of object that can be represented either inline (by hash)\n or via a reference (i.e. a pointer to an on-chain location).\n\n This is mainly use for capturing pointers to a stake credential\n registration certificate in the case of so-called pointer addresses.",
+      "anyOf": [
+        {
+          "title": "Inline",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "$ref": "#/definitions/aiken~1transaction~1credential~1Credential"
+            }
+          ]
+        },
+        {
+          "title": "Pointer",
+          "dataType": "constructor",
+          "index": 1,
+          "fields": [
+            {
+              "title": "slot_number",
+              "$ref": "#/definitions/Int"
+            },
+            {
+              "title": "transaction_index",
+              "$ref": "#/definitions/Int"
+            },
+            {
+              "title": "certificate_index",
+              "$ref": "#/definitions/Int"
+            }
+          ]
+        }
+      ]
+    },
+    "aiken/transaction/value/Value": {
+      "title": "Value",
+      "description": "A multi-asset output `Value`. Contains tokens indexed by [PolicyId](#PolicyId) and [AssetName](#AssetName).\n\n This type maintain some invariants by construction; in particular, a `Value` will never contain a\n zero quantity of a particular token.",
+      "dataType": "map",
+      "keys": {
+        "$ref": "#/definitions/ByteArray"
+      },
+      "values": {
+        "$ref": "#/definitions/aiken~1dict~1Dict$ByteArray_Int"
+      }
+    },
+    "proposal/Message": {
+      "title": "Message",
+      "anyOf": [
+        {
+          "title": "Message",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "multisig_action",
+              "$ref": "#/definitions/proposal~1MultiSigAction"
+            },
+            {
+              "title": "nonce",
+              "$ref": "#/definitions/aiken~1transaction~1OutputReference"
+            },
+            {
+              "title": "vote",
+              "$ref": "#/definitions/Bool"
+            }
+          ]
+        }
+      ]
+    },
+    "proposal/MultiSigAction": {
+      "title": "MultiSigAction",
+      "anyOf": [
+        {
+          "title": "Withdraw",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "withdraw_address",
+              "$ref": "#/definitions/aiken~1transaction~1credential~1Address"
+            },
+            {
+              "title": "withdraw_value",
+              "$ref": "#/definitions/aiken~1transaction~1value~1Value"
+            }
+          ]
+        },
+        {
+          "title": "UpdateMultiSigParameter",
+          "dataType": "constructor",
+          "index": 1,
+          "fields": [
+            {
+              "$ref": "#/definitions/proposal~1MultiSigParameter"
+            }
+          ]
+        }
+      ]
+    },
+    "proposal/MultiSigData": {
+      "title": "MultiSigData",
+      "anyOf": [
+        {
+          "title": "EmptyDatum",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": []
+        },
+        {
+          "title": "MultiSigDatum",
+          "dataType": "constructor",
+          "index": 1,
+          "fields": [
+            {
+              "title": "action",
+              "$ref": "#/definitions/proposal~1MultiSigAction"
+            },
+            {
+              "title": "signatures",
+              "$ref": "#/definitions/List$aiken~1transaction~1credential~1Credential"
+            }
+          ]
+        }
+      ]
+    },
+    "proposal/MultiSigParameter": {
+      "title": "MultiSigParameter",
+      "anyOf": [
+        {
+          "title": "MultiSigParameter",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "signatories_by_public_key",
+              "$ref": "#/definitions/List$ByteArray"
+            },
+            {
+              "title": "signatories_by_public_key_hash",
+              "$ref": "#/definitions/List$aiken~1transaction~1credential~1Credential"
+            },
+            {
+              "title": "required_signatories",
+              "$ref": "#/definitions/Int"
+            }
+          ]
+        }
+      ]
+    },
+    "proposal/MultiSigRedeemer": {
+      "title": "MultiSigRedeemer",
+      "anyOf": [
+        {
+          "title": "ProposeActionOnChain",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": []
+        },
+        {
+          "title": "AddSignatureOnChain",
+          "dataType": "constructor",
+          "index": 1,
+          "fields": []
+        },
+        {
+          "title": "RemoveSignatureOnChain",
+          "dataType": "constructor",
+          "index": 2,
+          "fields": []
+        },
+        {
+          "title": "ValidateActionOnChain",
+          "dataType": "constructor",
+          "index": 3,
+          "fields": []
+        },
+        {
+          "title": "ValidateActionOffChain",
+          "dataType": "constructor",
+          "index": 4,
+          "fields": [
+            {
+              "$ref": "#/definitions/proposal~1Message"
+            },
+            {
+              "$ref": "#/definitions/List$proposal~1Signature"
+            }
+          ]
+        }
+      ]
+    },
+    "proposal/Signature": {
+      "title": "Signature",
+      "anyOf": [
+        {
+          "title": "Signature",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "pk",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "cip30_msg",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "cip30_sig",
+              "$ref": "#/definitions/ByteArray"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
