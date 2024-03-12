@@ -1,0 +1,205 @@
+{
+    "10-participants": {
+        "8-Signatures": {
+            "2-UTxOs": {
+                "ex-units": {
+                    "mem": 9065300,
+                    "cpu": 2498084609
+                },
+                "result": "PASS"
+            },
+            "3-UTxOs": {
+                "ex-units": {
+                    "mem": 10822730,
+                    "cpu": 3040046035
+                },
+                "result": "PASS"
+            },
+            "4-UTxOs": {
+                "ex-units": {
+                    "mem": 12769584,
+                    "cpu": 3646526807
+                },
+                "result": "PASS"
+            },
+            "5-UTxOs": {
+                "ex-units": {
+                    "mem": 14905862,
+                    "cpu": 4317526925
+                },
+                "result": "Mem has exceeded by 905862"
+            }
+        },
+        "7-Signatures": {
+            "2-UTxOs": {
+                "ex-units": {
+                    "mem": 8677036,
+                    "cpu": 2396844536
+                },
+                "result": "PASS"
+            },
+            "3-UTxOs": {
+                "ex-units": {
+                    "mem": 10434466,
+                    "cpu": 2938805962
+                },
+                "result": "PASS"
+            },
+            "4-UTxOs": {
+                "ex-units": {
+                    "mem": 12381320,
+                    "cpu": 3545286734
+                },
+                "result": "PASS"
+            },
+            "5-UTxOs": {
+                "ex-units": {
+                    "mem": 14517598,
+                    "cpu": 4216286852
+                },
+                "result": "Mem has exceeded by 517598"
+            }
+        },
+        "6-Signatures": {
+            "2-UTxOs": {
+                "ex-units": {
+                    "mem": 8288772,
+                    "cpu": 2295604463
+                },
+                "result": "PASS"
+            },
+            "3-UTxOs": {
+                "ex-units": {
+                    "mem": 10046202,
+                    "cpu": 2837565889
+                },
+                "result": "PASS"
+            },
+            "4-UTxOs": {
+                "ex-units": {
+                    "mem": 11993056,
+                    "cpu": 3444046661
+                },
+                "result": "PASS"
+            },
+            "5-UTxOs": {
+                "ex-units": {
+                    "mem": 14129334,
+                    "cpu": 4115046779
+                },
+                "result": "Mem has exceeded by 129334"
+            }
+        },
+        "5-Signatures": {
+            "2-UTxOs": {
+                "ex-units": {
+                    "mem": 7900508,
+                    "cpu": 2194364390
+                },
+                "result": "PASS"
+            },
+            "3-UTxOs": {
+                "ex-units": {
+                    "mem": 9657938,
+                    "cpu": 2736325816
+                },
+                "result": "PASS"
+            },
+            "4-UTxOs": {
+                "ex-units": {
+                    "mem": 11604792,
+                    "cpu": 3342806588
+                },
+                "result": "PASS"
+            },
+            "5-UTxOs": {
+                "ex-units": {
+                    "mem": 13741070,
+                    "cpu": 4013806706
+                },
+                "result": "PASS"
+            },
+            "6-UTxOs": {
+                "ex-units": {
+                    "mem": 16066772,
+                    "cpu": 4749326170
+                },
+                "result": "Mem has exceeded by 2066772"
+            }
+        },
+        "4-Signatures": {
+            "2-UTxOs": {
+                "ex-units": {
+                    "mem": 7512244,
+                    "cpu": 2093124317
+                },
+                "result": "PASS"
+            },
+            "3-UTxOs": {
+                "ex-units": {
+                    "mem": 9269674,
+                    "cpu": 2635085743
+                },
+                "result": "PASS"
+            },
+            "4-UTxOs": {
+                "ex-units": {
+                    "mem": 11216528,
+                    "cpu": 3241566515
+                },
+                "result": "PASS"
+            },
+            "5-UTxOs": {
+                "ex-units": {
+                    "mem": 13352806,
+                    "cpu": 3912566633
+                },
+                "result": "PASS"
+            },
+            "6-UTxOs": {
+                "ex-units": {
+                    "mem": 15678508,
+                    "cpu": 4648086097
+                },
+                "result": "Mem has exceeded by 1678508"
+            }
+        },
+        "3-Signatures": {
+            "2-UTxOs": {
+                "ex-units": {
+                    "mem": 7123980,
+                    "cpu": 1991884244
+                },
+                "result": "PASS"
+            },
+            "3-UTxOs": {
+                "ex-units": {
+                    "mem": 8881410,
+                    "cpu": 2533845670
+                },
+                "result": "PASS"
+            },
+            "4-UTxOs": {
+                "ex-units": {
+                    "mem": 10828264,
+                    "cpu": 3140326442
+                },
+                "result": "PASS"
+            },
+            "5-UTxOs": {
+                "ex-units": {
+                    "mem": 12964542,
+                    "cpu": 3811326560
+                },
+                "result": "PASS"
+            },
+            "6-UTxOs": {
+                "ex-units": {
+                    "mem": 15290244,
+                    "cpu": 4546846024
+                },
+                "result": "Mem has exceeded by 1290244"
+            }
+        }
+    }
+}
